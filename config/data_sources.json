@@ -1,0 +1,44 @@
+{
+  "agriculture_prices": {
+    "resource_id": "9ef84268-d588-465a-a308-a864a43d0070",
+    "title": "Current daily price of various commodities in various markets (Mandi)",
+    "publisher": "Department of Agriculture & Farmers Welfare (Agmarknet)",
+    "notes": "Daily price data by market; NOT production/area/yield. Use for price insights and volatility, not for 'top produced crops by volume'.",
+    "api_style": "resource",
+    "base_url": "https://api.data.gov.in/resource/{resource_id}",
+    "fields_expected": [
+      "state", "district", "market", "commodity", "variety",
+      "arrival_date", "min_price", "max_price", "modal_price"
+    ],
+    "sample_filters": {
+      "filters[state.keyword]": "Maharashtra",
+      "filters[commodity]": "Onion"
+    }
+  },
+  "agriculture_production": {
+    "resource_id": "35be999b-0208-4354-b557-f6ca9a5355de",
+    "title": "District-wise, season-wise crop production statistics from 1997",
+    "publisher": "Ministry of Agriculture and Farmers Welfare (DES)",
+    "notes": "District-level annual production dataset with fields for state, district, crop_year, season, crop, area, production. Suitable for top-M crops, district extremes, and trends.",
+    "api_style": "resource",
+    "base_url": "https://api.data.gov.in/resource/{resource_id}",
+    "fields_expected": [
+      "state_name", "district_name", "crop_year", "season", "crop", "area_", "production_"
+    ],
+    "sample_filters": {
+      "filters[state_name]": "Maharashtra"
+    }
+  },
+  "rainfall_subdiv_monthly": {
+    "resource_id": "8e0bd482-4aba-4d99-9cb9-ff124f6f1c2f",
+    "title": "Sub Divisional Monthly Rainfall (1901-2017)",
+    "publisher": "India Meteorological Department (IMD)",
+    "notes": "Open API, monthly rainfall at meteorological sub-division level with coverage 1901–2017. Geometry is sub-division, not state; consider mapping if you need state-level aggregates. Coverage ends at 2017 (no present-year data).",
+    "api_style": "resource",
+    "base_url": "https://api.data.gov.in/resource/{resource_id}",
+    "fields_expected": [
+      "subdivision", "year", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "annual"
+    ],
+    "sample_filters": {}
+  }
+}
