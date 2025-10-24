@@ -1,3 +1,17 @@
+---
+title: Project Samarth
+emoji: 🚀
+colorFrom: red
+colorTo: red
+sdk: docker
+app_port: 8501
+tags:
+  - streamlit
+pinned: false
+short_description: A lightweight Q&A tool for India’s agri data.
+license: mit
+---
+
 # Project Samarth 🌾
 
 **An intelligent Q&A system for Indian agricultural and climate data**
