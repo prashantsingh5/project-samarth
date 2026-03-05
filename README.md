@@ -1,3 +1,16 @@
+# ⚠️ Project Archived
+
+This repository has been merged into a larger system.
+
+👉 New repository:
+[Click Here](https://github.com/prashantsingh5/multimodal-rag-ai-assistant)>
+
+This repo is kept only for reference and is no longer maintained.
+
+---
+
+Use this repo if want to use project samarth
+
 ---
 title: Project Samarth
 emoji: 🚀
